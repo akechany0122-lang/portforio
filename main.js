@@ -925,7 +925,7 @@ function generateDOM() {
             let navContent = item.group;
             let groupIndex = groupNames.indexOf(item.group);
             if (groupIndex !== -1) {
-                navContent = `<img src="logo/${groupIndex + 1}.jpg" class="nav-logo-img" alt="${item.group}">`;
+                navContent = `<img src="logo/${groupIndex + 1}.png" class="nav-logo-img" alt="${item.group}">`;
             }
 
             // Only remove End button from top UI
@@ -980,7 +980,7 @@ function generateDOM() {
             let headerContent = currentGridGroup;
             let groupIndex = groupNames.indexOf(currentGridGroup);
             if (groupIndex !== -1) {
-                headerContent = `<img src="logo/${groupIndex + 1}.jpg" class="section-logo-img" alt="${currentGridGroup}">`;
+                headerContent = `<img src="logo/${groupIndex + 1}.png" class="section-logo-img" alt="${currentGridGroup}">`;
             } else if (currentGridGroup === "Title" || currentGridGroup === "End") {
                 headerContent = "TITLE"; // Insert title.jpg instead of blank text
             }
@@ -1048,7 +1048,7 @@ function generateDOM() {
                 const groupNames = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"];
                 let groupIndex = groupNames.indexOf(group);
                 if (groupIndex !== -1) {
-                    return `<img src="logo/${groupIndex + 1}.jpg" class="section-logo-img" alt="${group}">`;
+                    return `<img src="logo/${groupIndex + 1}.png" class="section-logo-img" alt="${group}">`;
                 }
                 return group;
             })()}</h3>
